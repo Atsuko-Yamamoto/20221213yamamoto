@@ -18,7 +18,7 @@
     </div>
     <div class="form_container">
     <table>
-        <form action="" method="post">
+        <form action="{{ route('rest.signup') }}" method="post">
         <tr>
             <td>
             @csrf
