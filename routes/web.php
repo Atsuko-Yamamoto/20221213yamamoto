@@ -18,7 +18,7 @@ use App\Http\Controllers\RestController;
 Route::post('/register', [RestController::class, 'signup'])->name('rest.signup');
 
 //ログイン画面の表示
-Route::get('/login', [RestController::class, 'login'])->name('rest.login');
+// Route::get('/login', [RestController::class, 'login'])->name('rest.login');
 
 //一覧画面の表示
 Route::get('/', [RestController::class, 'index'])->name('rest.index')->middleware('auth');
