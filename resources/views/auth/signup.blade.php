@@ -18,7 +18,7 @@
     </div>
     <div class="form_container">
     <table>
-        <form action="{{ route('rest.signup') }}" method="post">
+        <form action="{{ route('register') }}" method="post">
         <tr>
             <td>
             @csrf
@@ -49,7 +49,7 @@
         <tr>
             <td class="login">
             <p>アカウントをお持ちの方はこちらから</p>
-            <a href="{{ route('rest.login') }}" class="login_link">ログイン</a>
+            <a href="{{ route('login') }}" class="login_link">ログイン</a>
             </td>
         </tr>
     </table>
