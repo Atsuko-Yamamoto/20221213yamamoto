@@ -40,6 +40,9 @@ class RestController extends Controller
     //$param = ['todos' => $todos, 'user' =>$user, 'tags' => $tags];
     // return view('index', compact('todos' , 'user'));
     //return view('index', $param);  
-    return view('auth.login');   
+    // return view('auth.login'); 
+
+    // TODO itamoto web.phpの/loginを有効にした上で、このviewだけを開くということができるか確認したい。
+    return view('index');   
   }  
 }

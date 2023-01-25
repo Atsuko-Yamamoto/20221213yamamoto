@@ -19,6 +19,7 @@ Route::post('/register', [RestController::class, 'signup'])->name('rest.signup')
 
 //ログイン画面の表示
 // Route::get('/login', [RestController::class, 'login'])->name('rest.login');
+// TODO itamoto 個々はコメントアウトしないほうが良いはず。http://localhost:8000/login にアクセスした場合のコントローラーが指定されなくなる。
 
 //一覧画面の表示
 Route::get('/', [RestController::class, 'index'])->name('rest.index')->middleware('auth');
