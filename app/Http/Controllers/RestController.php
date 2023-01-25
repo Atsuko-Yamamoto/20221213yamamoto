@@ -35,7 +35,7 @@ class RestController extends Controller
   {
     // $user = Auth::user();
     // $user_id = Auth::id();
-    // $rests = Rest::where('user_id', $user_id)->get();
+    $rests = Rest::where('user_id', $user_id)->get();
     
     //$param = ['todos' => $todos, 'user' =>$user, 'tags' => $tags];
     // return view('index', compact('todos' , 'user'));
